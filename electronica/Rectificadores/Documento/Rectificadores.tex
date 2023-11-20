@@ -125,24 +125,34 @@ Universidad Nacional de Colombia - Bogotá}
 
 Se inicia caracterizando el primer rectificador, al cual se le pone un solo diodo de alta frecuencia (Diodo de alta frecuencia) que actúa como una fuente de onda media.
 Se usa tambien, un transformador configurado con 120 V de entrada de corriente alterna,
-y una resistencia de $5$ KiloOhms para generar la onda media en el circuito. El diagrama
-de la red es como se muestra a continuación:
+y una resistencia de $5$ KiloOhms para generar la onda media en el circuito.
+\\ El diagrama de la red es como se muestra a continuación:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{OndaMedia.png}
+	\includegraphics[scale=1.5]{OndaMedia.png}
 	\caption{Circuito para la caracterización de rectificador onda media con un diodo.}
 	\label{salida}
 \end{figure}
 
 La señal obtenida en el osciloscopio se muestra a continuación
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{Osc_OndaMedia.jpg}
     \caption{Señal de rectificador de onda media}
     \label{SeñalMedia}
 \end{figure}
+
+Por lo que se observa en los gráficos anteriores, la señal tiene dos componentes principales,
+la parte positiva y negativa del sinal de corriente alterna. La señal positiva es la suma de las
+dos mitades de la señal completa, mientras que la señal negativa es la diferencia entre ambas
+mitades. Esto ocurre porque el diodo no permite pasar la corriente hacia abajo, por lo tanto, solo
+permite que fluya desde arriba hacia abajo, pero no viceversa. Por esta razón, al aplicar la
+corriente alterna a través del diodo, solo se obtiene la mitad de la señal completa.\\
+
+En la imagen, 
+
 
 
 \subsection{Onda Completa}
