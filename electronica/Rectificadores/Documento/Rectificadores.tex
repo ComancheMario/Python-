@@ -139,7 +139,7 @@ La señal obtenida en el osciloscopio se muestra a continuación
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{Osc_OndaMedia.jpg}
+    \includegraphics[scale=0.387]{Osc_OndaMedia.jpg}
     \caption{Señal de rectificador de onda media}
     \label{SeñalMedia}
 \end{figure}
@@ -151,39 +151,82 @@ mitades. Esto ocurre porque el diodo no permite pasar la corriente hacia abajo, 
 permite que fluya desde arriba hacia abajo, pero no viceversa. Por esta razón, al aplicar la
 corriente alterna a través del diodo, solo se obtiene la mitad de la señal completa.\\
 
-En la imagen, 
+En la imagen, se evidencia que la medida de la señal $V_p=14.4 V$, donde el valor de la escala
+por division es de $5V$.\\
+
+El proceso se repite en las siguientes secciones para  cada uno de los rectificadores.
 
 
 
 \subsection{Onda Completa}
 
+Para realizar la caracterización de rectificador de onda completa, se utiliza un transformador
+configurado con 120 V de entrada de corriente alterna, y una resistencia de $5$ KiloOh
+ms para generar la onda completa en el circuito. \\ El diagrama de la red es como se muestra
+a continuación:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{OndaCompleta2.png}
+	\includegraphics[scale=1.2]{OndaCompleta2.png}
 	\caption{Circuito para la caracterización de rectificador onda completa con dos diodos.}
 	\label{fig:enter-label}
 \end{figure}
 
+La señal obtenida en el osciloscopio se muestra a continuación
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.35]{Osc_OndaCompleta.jpg}
+	\caption{Señal de rectificador de onda completa con dos diodos}
+	\label{fig:enter-label}
+\end{figure}
+
+Como se puede ver en los gráficos anteriores, la señal tiene tres componentes principales,
+la parte positiva y negativa del sinal de corriente alterna, y la tercera componente es la
+parte intermedia de la señal. En este caso, la señal completa es la suma de las dos partes
+positivas y negativas. Es decir, la señal completa es la suma de la señal positiva y la
+negación de la señal negativa.\\
+Es importante destacar que el rectificador de onda completa es capaz de producir una señal
+completa sin necesidad de utilizar un capacitor.\\
+En la imagen, se evidencia que la medida de la señal $V_p=14.4 V$ (similar al valor de onda media), donde
+el valor de la escala por division es de $5V$ y se ve que varia el periodo de la señal respecto a la mostrada por el rectificador de onda media.\\
+
+Por otra parte, para el rectificador de onda completa de cuatro diodos se tiene el siguiente circuito:
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1]{OndaCompleta4.png}
 	\caption{Circuito para la caracterización de rectificador onda completa con cuatro diodos}
 	\label{fig:enter-label}
 \end{figure}
+Y su señal respectiva tiene la forma:
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.35]{Osc_OndaCompleta4D.jpg}
+	\caption{Señal de rectificador de onda completa con cuatro diodos}
+	\label{fig:enter-label}
+\end{figure}
+
+El resultado de esta configuración es similar al anterior, pero con la ventaja de tener una mayor
+capacidad de absorber energía por medio de los diodos. Por ello el valor de $V_p=13.6 V$, un poco menor que para dos diodos\\
 
 
 \subsection{Rizado de Filtrado}
 
-\begin{figure}[h!]
+El ultimo circuito, siendo el mas complejo, posee un capacitor el cual 
+se utiliza como filtro pasabajas para reducir la frecuencia de salida. El capacitor
+funciona como un condensador eléctrico, lo que permite controlar la impedancia de salida
+del circuito. La función principal del capacitor es eliminar la frecuencia de corte,
+lo que reduce la distorsión en la señal de salida.
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=1]{OndaCapacitorFiltrado.png}
 	\caption{Circuito para la caracterización de rectificador onda completa con cuatro diodos y capacitor de filtrado}
 	\label{fig:enter-label}
 \end{figure}
 
-
+La señal resultante es la suma de la señal completa y la señal de rizado de filtrado.
 
 \begin{equation}
 	V_{CC}-(i_CR_{C})-V_{CE}=0
