@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\usepackage{graphicx} % Required for inserting images
+%\topmargin -.45in
+\textwidth 6.5in
+\textheight 9.in
+\oddsidemargin 0in
+\headheight 0in
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{fancybox}
+% \usepackage{p alatino}
+\usepackage[utf8]{inputenc} %solucion del problema de los acentos.
+\usepackage{epsfig,graphicx}
+\usepackage{multicol,pst-plot}
+\setlength{\columnsep}{5mm}
+\usepackage{pstricks}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{eucal}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\pagestyle{empty}
+\DeclareMathOperator{\tr}{Tr}
+\newcommand*{\op}[1]{\check{\mathbf#1}}
+\newcommand{\bra}[1]{\langle #1 |}
+\newcommand{\ket}[1]{| #1 \rangle}
+\newcommand{\braket}[2]{\langle #1 | #2 \rangle}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\newcommand{\opvec}[1]{\check{\vec #1}}
+\renewcommand{\sp}[1]{$${\begin{split}#1\end{split}}$$}
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[nottoc]{tocbibind}
+\usepackage[titletoc]{appendix}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{csquotes}
+\usepackage{csquotes}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{multicol}
+\graphicspath{{images/}}
+\renewcommand{\labelitemii}{$\ast$}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+
+\begin{document}
+
+\section*{Enunciado:}
+
+Calcular el número de eventos de decaimiento beta por segundo para una muestra de carbono-14 ($^{14}$C) con un flujo incidente de $2 \times 10^{12}$ núcleos por segundo. La energía de los electrones de decaimiento es de 156 keV (kiloelectronvoltios). La sección eficaz para el decaimiento beta se considera $5 \times 10^{-5}$ barns. Suponiendo que la muestra contiene $6 \times 10^{23}$ átomos de carbono-14, determinar el número de eventos de decaimiento beta por segundo.
+
+\section*{Solución:}
+
+\[
+\text{Número de eventos} = \text{Flujo incidente} \times \text{Sección eficaz} \times \text{Número de centros dispersores en la muestra}
+\]
+
+Primero, calculamos el número de centros dispersores en la muestra de carbono-14:
+
+\[
+\text{Número de centros dispersores en la muestra} = \frac{\text{Número de átomos en la muestra}}{\text{Número de Avogadro}}
+\]
+\[
+\text{Número de centros dispersores en la muestra} = \frac{6 \times 10^{23} \text{ átomos}}{6.022 \times 10^{23} \text{ átomos/mol}} \approx 1 \text{ mol}
+\]
+
+Ahora, aplicamos la fórmula para calcular el número de eventos de decaimiento beta:
+
+\[
+\text{Número de eventos} = (2 \times 10^{12} \text{ núcleos/seg}) \times (5 \times 10^{-5} \text{ barns}) \times (1 \text{ mol}) \approx 10^{-4} \text{ eventos/seg}
+\]
+
+Este cálculo proporciona una estimación del número de eventos de decaimiento beta por segundo para la muestra de carbono-14 considerando la sección eficaz y el flujo incidente de núcleos por segundo.
+
+\end{document}
