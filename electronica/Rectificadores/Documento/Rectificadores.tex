@@ -5,12 +5,12 @@
 \textheight 9.in
 \oddsidemargin 0in
 \headheight 0in
+\usepackage{subfig}
 \usepackage{float}
-\usepackage{graphicx}
 \usepackage{fancybox}
 % \usepackage{p alatino}
 \usepackage[utf8]{inputenc} %solucion del problema de los acentos.
-\usepackage{epsfig,graphicx}
+\usepackage{epsfig}
 \usepackage{multicol,pst-plot}
 \setlength{\columnsep}{5mm}
 \usepackage{pstricks}
@@ -22,8 +22,8 @@
 \pagestyle{empty}
 \DeclareMathOperator{\tr}{Tr}
 \newcommand*{\op}[1]{\check{\mathbf#1}}
-\newcommand{\bra}[1]{\langle #1 |}
-\newcommand{\ket}[1]{| #1 \rangle}
+% \newcommand{\bra}[1]{\langle #1 |}
+% \newcommand{\ket}[1]{| #1 \rangle}
 \newcommand{\braket}[2]{\langle #1 | #2 \rangle}
 \newcommand{\mean}[1]{\langle #1 \rangle}
 \newcommand{\opvec}[1]{\check{\vec #1}}
@@ -36,10 +36,7 @@
 \usepackage{microtype}      % microtypography
 \usepackage{lipsum}
 \usepackage[spanish, es-tabla]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage[nottoc]{tocbibind}
 \usepackage[titletoc]{appendix}
@@ -57,7 +54,6 @@
 \usepackage{amsmath}
 \usepackage{titlesec}
 \usepackage{float}
-\usepackage{multicol}
 \graphicspath{{images/}}
 \renewcommand{\labelitemii}{$\ast$}
 \providecommand{\abs}[1]{\lvert#1\rvert}
@@ -169,7 +165,7 @@ a continuación:
 	\centering
 	\includegraphics[scale=1.2]{OndaCompleta2.png}
 	\caption{Circuito para la caracterización de rectificador onda completa con dos diodos.}
-	\label{fig:enter-label}
+	\label{fig:OndaCompleta2}
 \end{figure}
 
 La señal obtenida en el osciloscopio se muestra a continuación
@@ -178,7 +174,7 @@ La señal obtenida en el osciloscopio se muestra a continuación
 	\centering
 	\includegraphics[scale=.35]{Osc_OndaCompleta.jpg}
 	\caption{Señal de rectificador de onda completa con dos diodos}
-	\label{fig:enter-label}
+	\label{fig:OndaCompleta}
 \end{figure}
 
 Como se puede ver en los gráficos anteriores, la señal tiene tres componentes principales,
@@ -196,7 +192,7 @@ Por otra parte, para el rectificador de onda completa de cuatro diodos se tiene 
 	\centering
 	\includegraphics[scale=1]{OndaCompleta4.png}
 	\caption{Circuito para la caracterización de rectificador onda completa con cuatro diodos}
-	\label{fig:enter-label}
+	\label{fig:4}
 \end{figure}
 Y su señal respectiva tiene la forma:
 
@@ -204,7 +200,7 @@ Y su señal respectiva tiene la forma:
 	\centering
 	\includegraphics[scale=.35]{Osc_OndaCompleta4D.jpg}
 	\caption{Señal de rectificador de onda completa con cuatro diodos}
-	\label{fig:enter-label}
+	\label{fig:4D}
 \end{figure}
 
 El resultado de esta configuración es similar al anterior, pero con la ventaja de tener una mayor
@@ -223,7 +219,7 @@ lo que reduce la distorsión en la señal de salida.
 	\centering
 	\includegraphics[scale=1]{OndaCapacitorFiltrado.png}
 	\caption{Circuito para la caracterización de rectificador onda completa con cuatro diodos y capacitor de filtrado}
-	\label{fig:enter-label}
+	\label{fig:filtrado}
 \end{figure}
 
 La señal resultante es la suma de la señal completa y la señal de rizado de filtrado.
@@ -237,6 +233,27 @@ Despejando para $i_C$:
 	i_C=\frac{ V_{CC}-V_{CE}}{R_{C}}
 \end{equation}
 
+\begin{figure}[H]
+	\centering
+	\subfloat[1]{
+	 \label{f:2}
+	  \includegraphics[width=0.3\textwidth]{Filtrado7.jpg}}
+
+	\subfloat[2]{
+	  \label{f:1}
+	   \includegraphics[width=0.3\textwidth]{Filtrado0.jpg}}
+
+	 \subfloat[3]{
+	  \label{f:3}
+	   \includegraphics[width=0.3\textwidth]{Filtrado8.jpg}}
+	\\
+	\subfloat[4]{
+	 \label{f:4}
+	  \includegraphics[width=0.3\textwidth]{Filtrado9.jpg}}
+	
+	\caption{Múltiples imágenes}
+	\label{f:animales}
+   \end{figure}
 
 
 
