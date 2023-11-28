@@ -58,7 +58,7 @@
 \renewcommand{\labelitemii}{$\ast$}
 \providecommand{\abs}[1]{\lvert#1\rvert}
 \providecommand{\norm}[1]{\lVert#1\rVert}
-
+\usepackage{subcaption}
 \usepackage{listings}
 \usepackage{color}
 
@@ -224,37 +224,89 @@ lo que reduce la distorsión en la señal de salida.
 
 La señal resultante es la suma de la señal completa y la señal de rizado de filtrado.
 
-\begin{equation}
-	V_{CC}-(i_CR_{C})-V_{CE}=0
-\end{equation}
-Despejando para $i_C$:
-
-\begin{equation}
-	i_C=\frac{ V_{CC}-V_{CE}}{R_{C}}
-\end{equation}
+Para este circuito, se opto por medir primeramente la resistencia fija de 10 $k\Omega$ en el cual se obtienen las imagenes mostradas en la figura \ref{fig:cuadricula}, de las cuales bastantes tuvieron que despreciarse para evitar el ruido en los datos para los cuales se obtuvieron las graficas siguientes. Se evidencia que a medida que aumenta el voltaje promedio y de rizado el porcentaje de rizado se hace mayor.
 
 \begin{figure}[H]
-	\centering
-	\subfloat[1]{
-	 \label{f:2}
-	  \includegraphics[width=0.3\textwidth]{Filtrado7.jpg}}
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.65]{FiltradoResitencia_plt.png}
+        \caption*{\% Filtrado vs Resistencia}
+    \end{minipage}
+            \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.65]{FiltradoCapacitancia_plt.png}
+        \caption*{\% Filtrado vs Capacitancia}
+    \end{minipage}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
 
-	\subfloat[2]{
-	  \label{f:1}
-	   \includegraphics[width=0.3\textwidth]{Filtrado0.jpg}}
 
-	 \subfloat[3]{
-	  \label{f:3}
-	   \includegraphics[width=0.3\textwidth]{Filtrado8.jpg}}
-	\\
-	\subfloat[4]{
-	 \label{f:4}
-	  \includegraphics[width=0.3\textwidth]{Filtrado9.jpg}}
-	
-	\caption{Múltiples imágenes}
-	\label{f:animales}
-   \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado0.jpg}
+        \caption*{a}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{Filtrado7.jpg}
+        \caption*{b}
+    \end{minipage}
+    \\
+
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado9.jpg}
+        \caption*{d}
+    \end{minipage}
+    \hfill
+        \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado4.jpg}
+        \caption*{e}
+    \end{minipage}
+    \hfill
+        \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado5.jpg}
+        \caption*{f}
+    \end{minipage}
+    \caption{Rizado de filtrado variando la capacitancia.}
+    \label{fig:cuadricula}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado8.jpg}
+        \caption*{a}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado1.jpg}
+        \caption*{b}
+    \end{minipage}    
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{Filtrado2.jpg}
+        \caption*{c}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{Filtrado6.jpg}
+        \caption*{d}
+    \end{minipage}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
 
 
 \section{Conclusiones}
@@ -271,7 +323,7 @@ Despejando para $i_C$:
 \end{itemize}
 
 \begin{thebibliography}{9}
-
+	% àdfasdfasd
 \end{thebibliography}
 
 \end{document}
