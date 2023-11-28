@@ -241,9 +241,13 @@ Para este circuito, se opto por medir primeramente la resistencia fija de 10 $k\
     \caption{Caption}
     \label{fig:enter-label}
 \end{figure}
+Se hace importe mencionar que para realizar la grafica de porcentaje de rizado
+se calculó el voltaje promedio a partir de la siguiente ecuacion:
+$V_{cd}=(V_{p}+\frac{V_{r}}{2})$
 
-
-
+Luego se muestran las imagenes de la onda obtenidas en el osciloscopio,
+donde se observa que la señal ha sido filtrada adecuadamente,
+permitiendo solo los valores de resistencia y capacitancia deseados.
 \begin{figure}[H]
     \centering
     \begin{minipage}[b]{0.45\textwidth}
@@ -280,6 +284,10 @@ Para este circuito, se opto por medir primeramente la resistencia fija de 10 $k\
     \caption{Rizado de filtrado variando la capacitancia.}
     \label{fig:cuadricula}
 \end{figure}
+tambien,
+se muestran las señales obtenidas para un valor fijo de capacitancia en 47 $\mu F$
+variando 
+la resistencia entre $1k\Omega$ y $8k\Omega$.
 
 \begin{figure}[H]
     \centering
@@ -303,11 +311,17 @@ Para este circuito, se opto por medir primeramente la resistencia fija de 10 $k\
         \centering
         \includegraphics[scale=0.15]{Filtrado6.jpg}
         \caption*{d}
+    
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{Filtrado10.jpg}
+        \caption*{e}
     \end{minipage}
     \caption{Caption}
     \label{fig:enter-label}
 \end{figure}
-
 
 \section{Conclusiones}
 \begin{itemize}
