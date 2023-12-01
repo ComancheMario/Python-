@@ -392,7 +392,6 @@ INPUT ./OndaCapacitorFiltrado.png
 INPUT ./OndaCapacitorFiltrado.png
 INPUT ./OndaCapacitorFiltrado.png
 INPUT ./OndaCapacitorFiltrado.png
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT ./FiltradoResitencia_plt.png
 INPUT ./FiltradoResitencia_plt.png
 INPUT ./FiltradoResitencia_plt.png
@@ -456,7 +455,6 @@ INPUT ./Filtrado10.jpg
 INPUT Rectificadores.aux
 INPUT ./Rectificadores.out
 INPUT ./Rectificadores.out
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
