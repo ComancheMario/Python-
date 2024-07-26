@@ -1,0 +1,5 @@
+Datos 1 corte
+codigo, nombre, edad, salario
+21034, Jose, 34, 1500000
+2de34, Juan,23, 3000000
+eed345, Jesus,56,7000000	
