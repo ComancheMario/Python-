@@ -3,5 +3,6 @@
     "files.associations": {
         "draw_SK_NH.C": "cpp",
         "draw_SK_IH.C": "cpp"
-    }
+    },
+    "bitoAI.codeCompletion.enableAutoCompletion": false
 }
